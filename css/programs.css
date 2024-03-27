@@ -157,6 +157,10 @@ body {
   text-align: right;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 850px) {
   .programme, .programme-rev {
     flex-direction: column-reverse;

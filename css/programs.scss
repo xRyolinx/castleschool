@@ -147,6 +147,10 @@
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 @media (max-width: 850px) {
     .programme, .programme-rev {
