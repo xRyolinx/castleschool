@@ -155,4 +155,18 @@ body {
   padding-left: 0;
   padding-right: 20px;
   text-align: right;
+}
+
+@media (max-width: 850px) {
+  .programme, .programme-rev {
+    flex-direction: column-reverse;
+  }
+  .programme .program-img, .programme-rev .program-img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  .programme .program-text-container, .programme .program-text-container-rev, .programme-rev .program-text-container, .programme-rev .program-text-container-rev {
+    width: 80%;
+  }
 }/*# sourceMappingURL=programs.css.map */

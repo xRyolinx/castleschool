@@ -11,7 +11,6 @@ const updateTextAnimation = (textContainer) => {
 };
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
 	// animation titre
 	setTimeout(function() {

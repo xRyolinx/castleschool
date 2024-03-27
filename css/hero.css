@@ -42,7 +42,7 @@
 
 nav {
   position: fixed;
-  padding: 0 20px;
+  padding-right: 20px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -137,45 +137,35 @@ nav #nav-list li a {
 
 /* content part */
 .home {
-  height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100svh;
   width: 100%;
   padding-top: 120px;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 0px 100px;
 }
 
 .content {
   width: 100%;
   height: 100%;
+  padding: 0px 100px;
   display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.Animated-star {
-  position: absolute;
-  width: 180px;
-  bottom: 50px;
-  right: 0;
+  align-items: center;
 }
 
 .container-left {
   width: 70%;
   height: 100%;
+  max-height: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  overflow: hidden;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  overflow-x: hidden;
   /* background-color: rgba(0, 26, 17, 0.078); */
 }
 
-/* ------------------------------- */
-.content .container-left .the-castle-school {
+.the-castle-school {
   font-size: 60px;
   font-family: poly;
   font-weight: 500;
@@ -189,6 +179,7 @@ nav #nav-list li a {
   transition: transform 1s ease-in, opacity 2s ease-in;
 }
 
+/* ------------------------------- */
 .animate-slide {
   transform: translateX(700px);
   opacity: 1;
@@ -236,4 +227,64 @@ nav #nav-list li a {
   font-weight: 500;
   text-align: center;
   cursor: pointer;
+}
+.Animated-star {
+  position: absolute;
+  width: 180px;
+  bottom: 50px;
+  right: 50px;
+}
+
+#logo-mobile {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .Animated-star {
+    display: none;
+  }
+  nav #nav-list {
+    display: none;
+  }
+  #logo-mobile {
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+  #logo-mobile img {
+    display: block;
+    height: 100%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+  }
+  .content {
+    display: block;
+    padding: 0;
+  }
+  .content .container-left {
+    max-height: 1000px;
+    width: 100%;
+  }
+  .content .container-left .the-castle-school {
+    font-size: 35px;
+    margin: 0 auto;
+    transform: none;
+  }
+  .content .container-left .Animated-text h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .content .container-left p {
+    font-size: 18px;
+    text-align: center;
+    margin: 50px 0;
+    padding: 30px 20px;
+    background-color: rgba(187, 187, 187, 0.4);
+    -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+  }
+  .content .container-left button {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=hero.css.map */
