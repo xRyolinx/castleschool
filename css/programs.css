@@ -1,0 +1,158 @@
+:root {
+  --Poppins-Medium: Poppins-Medium;
+  --Poppins-Regular: Poppins-Regular;
+  --font-size-place: 18px;
+  --font-size-numero: 15px;
+  --primary900: #0F1528;
+  --primary700: #1D294D;
+  --primary500: #2B3D72;
+  --primary300: #4461B5;
+  --primary100: #8497D1;
+  --secondary900: #6B3300;
+  --secondary700: #C76000;
+  --secondary500: #FF8D24;
+  --secondary300: #FFB26B;
+  --secondary100: #FFD7B3;
+  --neutral900: #262626;
+  --neutral800: #414141;
+  --neutral700: #5B5B5B;
+  --neutral600: #747474;
+  --neutral500: #808080;
+  --neutral400: #999999;
+  --neutral300: #AAAAAA;
+  --neutral200: #BBBBBB;
+  --neutral100: #D8D8D8;
+  --neutral50: #F7F7F7;
+}
+
+:root {
+  --Poppins-Medium: Poppins-Medium;
+  --Poppins-Regular: Poppins-Regular;
+  --font-size-place: 18px;
+  --font-size-numero: 15px;
+  --primary900: #0F1528;
+  --primary700: #1D294D;
+  --primary500: #2B3D72;
+  --primary300: #4461B5;
+  --primary100: #8497D1;
+  --secondary900: #6B3300;
+  --secondary700: #C76000;
+  --secondary500: #FF8D24;
+  --secondary300: #FFB26B;
+  --secondary100: #FFD7B3;
+  --neutral900: #262626;
+  --neutral800: #414141;
+  --neutral700: #5B5B5B;
+  --neutral600: #747474;
+  --neutral500: #808080;
+  --neutral400: #999999;
+  --neutral300: #AAAAAA;
+  --neutral200: #BBBBBB;
+  --neutral100: #D8D8D8;
+  --neutral50: #F7F7F7;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: var(--Poppins-Regular);
+}
+
+/* Fonts */
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+#programs-section {
+  background-color: var(--secondary900);
+}
+#programs-section header {
+  padding: 0 50px;
+}
+#programs-section header h2 {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+  color: var(--neutral100);
+}
+@media (max-width: 500px) {
+  #programs-section header {
+    padding: 0 20px;
+  }
+}
+
+#programs {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 40px;
+}
+
+.programme, .programme-rev {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.programme .program-img, .programme-rev .program-img {
+  width: 30%;
+  align-self: stretch;
+}
+.programme .program-img img, .programme-rev .program-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.programme .program-text-container, .programme .program-text-container-rev, .programme-rev .program-text-container, .programme-rev .program-text-container-rev {
+  width: 50%;
+}
+.programme .program-text-container .program-title, .programme .program-text-container .program-title-rev, .programme .program-text-container-rev .program-title, .programme .program-text-container-rev .program-title-rev, .programme-rev .program-text-container .program-title, .programme-rev .program-text-container .program-title-rev, .programme-rev .program-text-container-rev .program-title, .programme-rev .program-text-container-rev .program-title-rev {
+  display: inline-block;
+  width: auto;
+  border-bottom: solid 2px var(--secondary100);
+}
+.programme .program-text-container .program-title h3, .programme .program-text-container .program-title-rev h3, .programme .program-text-container-rev .program-title h3, .programme .program-text-container-rev .program-title-rev h3, .programme-rev .program-text-container .program-title h3, .programme-rev .program-text-container .program-title-rev h3, .programme-rev .program-text-container-rev .program-title h3, .programme-rev .program-text-container-rev .program-title-rev h3 {
+  margin: 0;
+  padding: 3px 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  color: var(--secondary100);
+}
+.programme .program-text-container p, .programme .program-text-container-rev p, .programme-rev .program-text-container p, .programme-rev .program-text-container-rev p {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: var(--neutral100);
+  word-break: keep-all;
+}
+
+.programme-rev {
+  flex-direction: row-reverse;
+}
+.programme-rev .program-text-container-rev .program-title-contain-rev {
+  display: flex;
+  justify-content: flex-end;
+}
+.programme-rev .program-text-container-rev .program-title-rev h3 {
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.programme-rev .program-text-container-rev p {
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
+}/*# sourceMappingURL=programs.css.map */

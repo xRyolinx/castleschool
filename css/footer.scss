@@ -1,0 +1,98 @@
+@import "global";
+
+
+footer {
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 40px;
+    background-color: var(--neutral50);
+
+    #contacts {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 3px solid red;
+
+        #contacts1 {
+            p {
+                margin: 0;
+                padding: 5px 0;
+            }
+            #algiers {
+                font-size: var(--font-size-place);
+                color: var(--secondary700);
+                padding-bottom: 10px;
+            }
+            .place {
+                font-size: var(--font-size-numero);
+                color: var(--neutral900);
+            }
+            .numero {
+                font-size: var(--font-size-numero);
+                color: var(--neutral800);
+            }
+        }
+
+        #contacts2 {
+            p {
+                margin: 0;
+                padding: 5px 0;
+            }
+            .place {
+                font-size: var(--font-size-place);
+                color: var(--secondary700);
+            }
+            .numero {
+                font-size: var(--font-size-numero);
+                color: var(--neutral800);
+            }
+        }
+
+
+        #logo-div {
+            height: 150px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    #socials-div {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        // border: 3px solid red;
+
+        p {
+            color: var(--neutral800);
+            text-align: center;
+            margin: 0;
+            padding: 5px 0;
+        }
+        
+        #explore {
+            font-size: var(--font-size-place);
+        }
+
+        #more-info {
+            font-size: 14px;
+        }
+
+        #socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 5px;
+
+            svg {
+                height: 30px;
+                margin: 0 2px;
+                // border: 1px solid red;
+            }
+        }
+    }
+}

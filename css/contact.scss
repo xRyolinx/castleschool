@@ -1,0 +1,128 @@
+@import "global";
+
+
+#contact-section {
+    // padding: 0 50px;
+    background-color: var(--primary700);    
+
+    // ----------------- title -------------------
+    header {
+        padding: 0 50px;
+
+        h2 {
+            margin: 0;
+            padding-top: 50px;
+            padding-bottom: 20px;
+
+            font-size: 40px;
+            text-align: center;
+            
+            color: var(--secondary300);
+            
+            // background-color: green;
+        }
+    }
+    @media (max-width: 500px) {
+        header {
+            padding: 0 20px;
+        }
+    }
+}
+
+
+// ---------------formulaire---------------
+#form-container {
+    padding: 0 50px;
+}
+#form {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+    // margin-bottom: 50px;
+
+    padding: 40px;
+    padding-top: 50px;
+
+    // background-color: red;
+}
+
+.form-info {
+    // background-color: red;
+    margin-bottom: 40px;
+
+    p {
+        margin: 0;
+        padding-bottom: 15px;
+        padding-left: 25px;
+
+        font-size: 18px;
+        color: var(--neutral50);
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 20px 30px;
+        margin: 0;
+
+        outline: none;
+        border: none;
+        border-radius: 15px;
+
+        font-size: 15px;
+        color: var(--primary900);
+    }
+
+    textarea {
+        min-height: 200px;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.submit-button-container {
+    width: 100%;
+
+    // background-color: green;
+
+    .submit-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        margin: 0 auto;
+
+        height: 45px;
+        padding: 0 50px;
+        // padding: 10px 40px;
+
+        border: none;
+        border-radius: 15px;
+
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+
+        color: var(--primary700);
+        background-color: var(--neutral50);
+    }
+    .submit-button:active {
+        background-color: var(--noir-bleu);
+    }
+}
+
+@media (max-width: 550px) {
+    #form-container {
+        padding: 0 0px;
+    }
+    #form {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 400px) {
+    #form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
