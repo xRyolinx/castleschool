@@ -243,8 +243,14 @@ nav #nav-list li a {
   .Animated-star {
     display: none;
   }
+  nav {
+    height: 100px;
+  }
   nav #nav-list {
     display: none;
+  }
+  .home {
+    padding-top: 100px;
   }
   #logo-mobile {
     display: block;

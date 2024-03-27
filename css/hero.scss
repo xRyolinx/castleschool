@@ -307,9 +307,15 @@ nav {
         display: none;
     }
     nav {
+        height: 100px;
+
         #nav-list {
             display: none;
         }
+    }
+
+    .home {
+        padding-top: 100px; // size of nav
     }
 
     #logo-mobile {
