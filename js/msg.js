@@ -2,6 +2,7 @@ function show_contact() {
     document.querySelector('#contact-section').style.display = 'block';
     document.querySelector('.home').style.display = 'none';
     document.querySelector('#programs-section').style.display = 'none';
+    document.querySelector('#map-section').style.display = 'none';
     document.querySelector('#languages-section').style.display = 'none';
     document.querySelector('#infos-mobile').style.display = 'none';
     document.querySelector('nav').style.display = 'none';
@@ -9,6 +10,7 @@ function show_contact() {
 }
 
 function hide_contact() {
+    document.querySelector('#map-section').removeAttribute('style');
     document.querySelector('#contact-section').removeAttribute('style');
     document.querySelector('.home').removeAttribute('style');
     document.querySelector('#programs-section').removeAttribute('style');
