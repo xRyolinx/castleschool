@@ -62,9 +62,12 @@ main {
   text-align: center;
   color: var(--secondary300);
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   #contact-section header {
     padding: 0 20px;
+  }
+  #contact-section header h2 {
+    font-size: 32px;
   }
 }
 

@@ -122,4 +122,20 @@ footer #socials-div #socials {
 footer #socials-div #socials svg {
   height: 30px;
   margin: 0 2px;
+}
+
+@media (max-width: 850px) {
+  footer #contacts {
+    justify-content: center;
+  }
+  footer #contacts #contacts1, footer #contacts #contacts2 {
+    display: none;
+  }
+  footer #socials-div {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  footer #socials-div #socials svg {
+    height: 50px;
+  }
 }/*# sourceMappingURL=footer.css.map */

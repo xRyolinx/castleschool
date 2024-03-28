@@ -96,3 +96,27 @@ footer {
         }
     }
 }
+
+@media (max-width: 850px) {
+    footer {
+        #contacts {
+            justify-content: center;
+            // background-color: red;
+
+            #contacts1, #contacts2 {
+                display: none;
+            }
+        }
+
+        #socials-div {
+            padding-top: 50px;
+            padding-bottom: 40px;
+
+            #socials {
+                svg {
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

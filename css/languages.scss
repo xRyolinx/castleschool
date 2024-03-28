@@ -53,14 +53,18 @@
             // background-color: green;
         }
     }
-    @media (max-width: 500px) {
+    @media (max-width: 850px) {
         header {
             padding: 0 20px;
+
+            h2 {
+                font-size: 32px;
+            }
         }
     }
 }
 
-#langues {
+#langues, #langues-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,10 +83,10 @@
         .langue-img {
             height: 70px;
             aspect-ratio: 1;
-            border-radius: 15px;
             overflow: hidden;
 
             img {
+                border-radius: 15px;
                 height: 100%;
                 aspect-ratio: 1;
             }
@@ -112,46 +116,30 @@
     #langues {
         display: none;
     }
+
     #langues-mobile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 50px 20px;
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-    
-        .langue, .reverse-langue {
+        display: block;
+        max-width: 450px;
+        padding: 20px;
+
+        #langues1, #langues2 {
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            // background-color: red;
-    
-            .langue-img {
-                height: 70px;
-                aspect-ratio: 1;
-                border-radius: 15px;
-                overflow: hidden;
-    
-                img {
-                    height: 100%;
-                    aspect-ratio: 1;
+            padding: 20px 0;
+
+            .reverse-langue {
+                margin: 0 20px;
+
+                .langue-img {
+                    height: 60px;
                 }
             }
-    
-            h3 {
-                margin: 0;
-                padding-top: 10px;
-            }
-        }
-    
-        .reverse-langue {
-            flex-direction: column-reverse;
-    
-            h3 {
-                padding-top: 0;
-                padding-bottom: 10px;
+
+            .langue-space {
+                width: 35px;
+                aspect-ratio: 1;
             }
         }
     }

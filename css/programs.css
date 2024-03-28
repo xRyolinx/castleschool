@@ -89,9 +89,12 @@ main {
   text-align: center;
   color: var(--neutral100);
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   #programs-section header {
     padding: 0 20px;
+  }
+  #programs-section header h2 {
+    font-size: 32px;
   }
 }
 
