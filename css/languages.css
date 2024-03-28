@@ -54,6 +54,12 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 body {
@@ -76,7 +82,7 @@ main {
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 #languages-section {
-  background-color: var(--primary100);
+  background-color: rgba(132, 151, 209, 0.7);
   padding-bottom: 50px;
 }
 #languages-section header {
@@ -120,9 +126,13 @@ main {
   overflow: hidden;
 }
 #langues .langue .langue-img img, #langues .reverse-langue .langue-img img, #langues-mobile .langue .langue-img img, #langues-mobile .reverse-langue .langue-img img {
-  border-radius: 15px;
+  border: solid 3px var(--primary100);
+  border-radius: 20px;
   height: 100%;
   aspect-ratio: 1;
+}
+#langues .langue .langue-img .svg, #langues .reverse-langue .langue-img .svg, #langues-mobile .langue .langue-img .svg, #langues-mobile .reverse-langue .langue-img .svg {
+  border: none !important;
 }
 #langues .langue h3, #langues .reverse-langue h3, #langues-mobile .langue h3, #langues-mobile .reverse-langue h3 {
   margin: 0;

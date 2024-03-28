@@ -7,6 +7,13 @@ function show_contact() {
     document.querySelector('#infos-mobile').style.display = 'none';
     document.querySelector('nav').style.display = 'none';
     document.querySelector('footer').style.display = 'none';
+
+    // scroll up
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth', 
+    });
 }
 
 function hide_contact() {

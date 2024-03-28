@@ -33,7 +33,8 @@
 @import "global";
 
 #languages-section {
-    background-color: var(--primary100);
+    // background-color: var(--primary100);
+    background-color: rgba($color: #8497D1, $alpha: 0.7);
     padding-bottom: 50px;
 
     // ----------------- title -------------------
@@ -86,9 +87,14 @@
             overflow: hidden;
 
             img {
-                border-radius: 15px;
+                border: solid 3px var(--primary100);
+                border-radius: 20px;
                 height: 100%;
                 aspect-ratio: 1;
+            }
+
+            .svg {
+                border: none !important;
             }
         }
 

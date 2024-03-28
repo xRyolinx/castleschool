@@ -27,6 +27,12 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 body {
@@ -52,7 +58,7 @@ footer {
   width: 100%;
   padding: 10px 20px;
   padding-top: 40px;
-  background-color: var(--neutral50);
+  background-color: rgba(247, 247, 247, 0.7);
 }
 footer #contacts {
   margin: 0 auto;

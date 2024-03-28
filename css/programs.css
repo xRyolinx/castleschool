@@ -54,6 +54,12 @@
 
 *, *:before, *:after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+*:focus {
+  outline: none !important;
 }
 
 body {
@@ -194,6 +200,7 @@ body {
     align-items: flex-end;
   }
   .programme-rev .program-img {
+    padding-left: 0;
     padding-right: 20px;
   }
   .programme-rev .program-text-container-rev {
