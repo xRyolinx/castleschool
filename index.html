@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/languages.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/infos-mob.css">
+    <link rel="stylesheet" href="css/map.css">
     <script src="js/contact.js"></script>
+    <script src="js/msg.js"></script>
 
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -71,7 +74,7 @@
                     <!-- texte -->
                     <p>For 12 years, The Castle School has been a beacon of education across seven locations in Algeria. We take pride in offering a diverse range of courses both on-site and online, empowering students to unlock the doors to the world through language learning.</p>
                     <!-- boutton -->
-                    <button onclick="window.location.href = '#contact-section';">
+                    <button class="send-msg" onclick="window.location.href = '#contact-section';">
                         Send Message
                         <img src="img/ic_round-send.svg" alt="">
                     </button>
@@ -86,6 +89,21 @@
               <li><a href="/Contact">Contact</a></li>
             </ul>
             </footer> -->
+        </div>
+
+        <!-- map -->
+        <div id="map-section">
+            <div id="map-container">
+                <div id="map-text">
+                    <p>The Castle School is present in <span class="brown">7 Wilayas</span> including : <span class="orange">Oran</span>, <span class="orange">Blida</span>, <span class="orange">Algiers</span>, <span class="orange">Boumerdes</span>, <span class="orange">Bejaia</span>, <span class="orange">Setif</span> and <span class="orange">Constantine</span>.</p>
+                    <p>With additional campuses across 4 regions in Algiers: 
+                        <span class="blue">Algiers Center</span>, <span class="blue">Dely Brahim</span>, <span class="blue">Bab Ezzouar</span>, and <span class="blue">Draria</span>. </p>
+                    <p>Our multilingual learning experience is conveniently accessible across Algeria.</p>
+                </div>
+                <div id="map-img">
+                    <img src="/img/map.png" alt="">
+                </div>
+            </div>
         </div>
 
         <!-- programs -->
@@ -219,6 +237,7 @@
         <div id="contact-section">
             <!-- titre -->
             <header>
+                <img id="go-back" src="/img/return-icon.svg" alt="">
                 <h2>Contact Us</h2>
             </header>
     
@@ -256,6 +275,38 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+        <!-- page des infos mobile -->
+        <div id="infos-mobile">
+            <header>
+                <h2>Contact Us</h2>
+            </header>
+
+            <!-- contacts2 -->
+            <div id="contacts2">
+                <p><span class="place">Boumerdes : </span><span class="numero">0553742501</span></p>
+                <p><span class="place">Blida : </span><span class="numero">0555860926</span></p>
+                <p><span class="place">Oran : </span><span class="numero">0773146590</span></p>
+                <p><span class="place">Constantine : </span><span class="numero">0555403082</span></p>
+                <p><span class="place">Bejaia : </span><span class="numero">0558130716</span></p>
+                <p><span class="place">Setif : </span><span class="numero">0669506788</span></p>
+            </div>
+            
+            <!-- contacts1 -->
+            <div id="contacts1">
+                <p id="algiers">Algiers</p>
+                <p><span class="place">Algiers Center : </span><span class="numero">044190596</span></p>
+                <p><span class="place">Dely Brahim : </span><span class="numero">0776398637</span></p>
+                <p><span class="place">Bab Ezzouar : </span><span class="numero">0784350787</span></p>
+                <p><span class="place">Draria : </span><span class="numero">0541561199</span></p>
+            </div>
+
+            <!-- button -->
+            <button class="send-msg" onclick="window.location.href = '#contact-section';">
+                Send Message
+                <img src="img/ic_round-send.svg" alt="">
+            </button>
         </div>
     </main>
     

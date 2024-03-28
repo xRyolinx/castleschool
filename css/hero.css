@@ -25,6 +25,41 @@
   --neutral50: #F7F7F7;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: var(--Poppins-Regular);
+}
+
+main {
+  width: 100%;
+}
+
+/* Fonts */
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+.background-img, nav, .Animated-star {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .background-img {
   position: fixed;
   top: 0;

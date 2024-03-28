@@ -1,34 +1,10 @@
-:root {
-    // fonts
-    --Poppins-Medium: Poppins-Medium;
-    --Poppins-Regular: Poppins-Regular;
-    // font size
-    --font-size-place: 18px;
-    --font-size-numero: 15px;
+@import "global";
 
-    // colors
-    --primary900 : #0F1528;
-    --primary700 : #1D294D;
-    --primary500 : #2B3D72;
-    --primary300 : #4461B5;
-    --primary100 : #8497D1;
 
-    --secondary900 : #6B3300;
-    --secondary700 : #C76000;
-    --secondary500 : #FF8D24;
-    --secondary300 : #FFB26B;
-    --secondary100 : #FFD7B3;
-
-    --neutral900 : #262626;
-    --neutral800 : #414141;
-    --neutral700 : #5B5B5B;
-    --neutral600 : #747474;
-    --neutral500 : #808080;
-    --neutral400 : #999999;
-    --neutral300 : #AAAAAA;
-    --neutral200 : #BBBBBB;
-    --neutral100 : #D8D8D8;
-    --neutral50 : #F7F7F7;
+.background-img, nav, .Animated-star{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .background-img{
@@ -38,6 +14,7 @@
     width: 100vw;
     height: 100lvh;
     z-index:-1;
+
     
     img {
         height: 100%;
