@@ -24,7 +24,7 @@ function hide_contact() {
 // start
 document.addEventListener('DOMContentLoaded', () => {
     // resize
-    window.addEventListener('resize', hide_contact);
+    // window.addEventListener('resize', hide_contact);
     // show contact
     let buttons = document.querySelectorAll('.send-msg');
     buttons.forEach(button => {
