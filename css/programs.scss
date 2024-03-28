@@ -71,7 +71,7 @@
 
 .programme, .programme-rev {
     width: 100%;
-    margin: 40px 0;
+    padding: 40px 0;
     // background-color: green;
     display: flex;
     justify-content: flex-start;
@@ -82,7 +82,7 @@
         // background-color: blue;
         width: 30%;
         align-self: stretch;
-        // aspect-ratio: 1.5;
+        // aspect-ratio: 2;
 
         img {
             width: 100%;
@@ -153,17 +153,50 @@ body {
 
 
 @media (max-width: 850px) {
+
+    #programs {
+        padding: 0 20px;
+    }
     .programme, .programme-rev {
+        width: 90%;
+        max-width: 450px;
         flex-direction: column-reverse;
 
         .program-img {
-            width: 70%;
-            margin: 0 auto;
-            display: block;
+            width: 100%;
+            // aspect-ratio: 1;
+            // align-self: auto;
+            padding-left: 20px;
         }
 
-        .program-text-container, .program-text-container-rev {
-            width: 80%;
+        .program-text-container {
+            width: 100%;
+
+            p {
+                padding: 15px 0;
+                padding-left: 20px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    .programme-rev {
+        margin-left: auto;
+        align-items: flex-end;
+
+        .program-img {
+            padding-right: 20px;
+        }
+
+        .program-text-container-rev {
+            width: 100%;
+
+            p {
+                // text-align: start;
+                padding: 15px 0;
+                padding-right: 20px;
+                padding-bottom: 25px;
+            }
         }
     }
 }

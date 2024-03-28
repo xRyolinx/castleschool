@@ -36,7 +36,9 @@
 }
   
 body {
+    // height: auto !important;
     width: 100%;
+    // overflow: hidden;
     margin: 0;
     font-family: var(--Poppins-Regular);
 }

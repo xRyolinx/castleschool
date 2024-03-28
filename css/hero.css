@@ -30,7 +30,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100svh;
+  height: 100lvh;
   z-index: -1;
 }
 .background-img img {
@@ -99,7 +99,7 @@ nav #nav-list li a {
   padding: 8px, 24px, 8px, 24px;
   cursor: pointer;
 }
-.language-switch a {
+.language-switch p {
   font-size: 14px;
   font-family: Poppins;
   color: var(--neutral50);
@@ -244,10 +244,23 @@ nav #nav-list li a {
     display: none;
   }
   nav {
-    height: 100px;
+    height: 80px;
   }
   nav #nav-list {
     display: none;
+  }
+  nav .logo {
+    height: 100%;
+  }
+  .language-switch {
+    margin-top: 10px;
+    height: 40px;
+    padding: 10px;
+  }
+  .language-switch p {
+    margin: 0;
+    padding: 8px 5px;
+    padding-left: 10px;
   }
   .home {
     padding-top: 100px;

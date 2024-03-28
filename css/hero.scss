@@ -36,7 +36,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100svh;
+    height: 100lvh;
     z-index:-1;
     
     img {
@@ -123,7 +123,7 @@ nav {
 
     cursor: pointer;
 
-    a {
+    p {
         font-size: 14px;
         font-family: Poppins;
         color: var(--neutral50);
@@ -307,12 +307,28 @@ nav {
         display: none;
     }
     nav {
-        height: 100px;
+        height: 80px;
 
         #nav-list {
             display: none;
         }
+
+        .logo {
+            height: 100%;
+        }
     }
+    .language-switch {
+        margin-top: 10px;
+        height: 40px;
+        padding: 10px;
+        p {
+            margin: 0;
+            padding: 8px 5px;
+            padding-left: 10px;
+        }
+
+    }
+
 
     .home {
         padding-top: 100px; // size of nav

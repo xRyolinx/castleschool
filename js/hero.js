@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		dropdown.style.display = "block";
 		dropdown.style.top = lang_switch.clientHeight.toString() + "px";
 		dropdown.style.width = lang_switch.clientWidth.toString() + "px";
-
 	});
 
 	lang_switch.addEventListener('mouseout', ()=> {
