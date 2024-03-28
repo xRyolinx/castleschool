@@ -25,8 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	let lang_switch = document.querySelector('.language-switch');
 	let dropdown = document.querySelector('.dropdown-content');
 
+	window.addEventListener('resize', () => {
+		lang_switch.removeAttribute("style");
+		dropdown.removeAttribute("style");
+	})
+
 	lang_switch.addEventListener('mouseover', ()=> {
-		lang_switch.style.borderRadius = "24px 24px 0 0";
+		let nav = document.querySelector('nav');
+		let radius = "24px";
+		if (nav.clientHeight == 100)
+		{
+			radius = "20px";
+		}
+		lang_switch.style.borderRadius = `${radius} ${radius} 0 0`;
 		dropdown.style.display = "block";
 		dropdown.style.top = lang_switch.clientHeight.toString() + "px";
 		dropdown.style.width = lang_switch.clientWidth.toString() + "px";
